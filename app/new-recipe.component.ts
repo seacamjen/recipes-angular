@@ -5,10 +5,14 @@ import {Recipe} from './recipe.model';
   template:`
   <div>
     <h1>Add New Recipe</h1>
-    <input placeholder="Recipe Title" #newTitle>
-    <input placeholder="Ingredients"#newIngredients>
-    <input placeholder="Source" #newSource>
-    <input placeholder="Image" #newImage>
+    <input placeholder="Recipe Title" class="form-control" #newTitle>
+    <br>
+    <input placeholder="Ingredients" class="form-control" class="form-control" #newIngredients>
+    <br>
+    <input placeholder="Source" class="form-control" #newSource>
+    <br>
+    <input placeholder="Image" class="form-control" #newImage>
+    <br>
     <button (click)="submitForm(newTitle.value, newImage.value, newIngredients.value, newSource.value); newTitle.value='';">Add</button>
   </div>
   `

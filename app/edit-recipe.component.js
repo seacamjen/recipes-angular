@@ -31,7 +31,7 @@ __decorate([
 EditRecipeComponent = __decorate([
     core_1.Component({
         selector: 'edit-recipe',
-        template: "\n    <div *ngIf=\"childSelectedRecipe\">\n      <h4>{{childSelectedRecipe.title}}</h4>\n      <h3>Edit Recipe</h3>\n      <input [(ngModel)]=\"childSelectedRecipe.title\">\n      <input [(ngModel)]=\"childSelectedRecipe.ingredients\">\n      <input [(ngModel)]=\"childSelectedRecipe.source\">\n      <input [(ngModel)]=\"childSelectedRecipe.image\">\n      <button class=\"btn btn-default\" (click)=\"doneButtonClicked()\">Submit</button>\n    </div>\n  "
+        template: "\n    <div *ngIf=\"childSelectedRecipe\">\n    <hr>\n\n      <h4>{{childSelectedRecipe.title}}</h4>\n      <h3>Edit Recipe</h3>\n      <div class=\"form-group\">\n        <label>Recipe Name:</label>\n        <input [(ngModel)]=\"childSelectedRecipe.title\" class=\"form-control\">\n      </div>\n      <div class=\"form-group\">\n        <label>Ingredients:</label>\n        <input [(ngModel)]=\"childSelectedRecipe.ingredients\" class=\"form-control\">\n      </div>\n      <div class=\"form-group\">\n        <label>Source:</label>\n        <input [(ngModel)]=\"childSelectedRecipe.source\" class=\"form-control\">\n      </div>\n      <div class=\"form-group\">\n        <label>Image url:</label>\n        <input [(ngModel)]=\"childSelectedRecipe.image\" class=\"form-control\">\n      </div>\n      <button class=\"btn btn-default\" (click)=\"doneButtonClicked()\">Submit</button>\n      <hr>\n    </div>\n\n  "
     })
 ], EditRecipeComponent);
 exports.EditRecipeComponent = EditRecipeComponent;

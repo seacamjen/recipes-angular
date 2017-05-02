@@ -30,7 +30,7 @@ __decorate([
 RecipeListComponent = __decorate([
     core_1.Component({
         selector: 'recipe-list',
-        template: "\n  <div *ngFor=\"let currentRecipe of childRecipeList\">\n    <div class=\"panel panel-default\">\n      <div class=\"panel-heading\">\n        <h2>{{currentRecipe.title}}</h2>\n      </div>\n      <div class=\"panel-body\">\n        <p> {{currentRecipe.ingredients}} {{currentRecipe.source}} {{currentRecipe.image}}</p>\n        <button class=\"btn btn-default\" (click)=\"editButtonHasBeenClicked(currentRecipe)\">Edit</button>\n      </div>\n    </div>\n  </div>\n  "
+        template: "\n  <div class=\"row\">\n    <div class=\"col-md-4\" *ngFor=\"let currentRecipe of childRecipeList\">\n      <div class=\"panel panel-default\">\n        <div class=\"panel-heading\">\n          <h4>{{currentRecipe.title}}</h4>\n        </div>\n        <div class=\"panel-body\">\n          <p>\n          <img src=\"{{currentRecipe.image}}\" alt=\"picture of food\">\n          <a href=\"{{currentRecipe.source}}\">{{currentRecipe.source}}</a>\n          <br>\n          {{currentRecipe.ingredients}}\n          </p>\n          <button class=\"btn btn-default\" (click)=\"editButtonHasBeenClicked(currentRecipe)\">Edit</button>\n        </div>\n      </div>\n    </div>\n  </div>\n\n  "
     })
 ], RecipeListComponent);
 exports.RecipeListComponent = RecipeListComponent;
