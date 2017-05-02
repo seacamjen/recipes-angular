@@ -15,6 +15,7 @@ var AppComponent = (function () {
             new recipe_model_1.Recipe("Worst Cake Ever", "https://s-media-cache-ak0.pinimg.com/736x/bd/0f/64/bd0f64a6370fd3231458db1b6f419056.jpg", "2 parts magic, 1/2 tbs pink", "https://www.pinterest.com"),
             new recipe_model_1.Recipe("Ok Cake Ever", "https://s-media-cache-ak0.pinimg.com/736x/bd/0f/64/bd0f64a6370fd3231458db1b6f419056.jpg", "1 part love, 1/2 tbs pink", "https://www.pinterest.com"),
         ];
+        this.selectedRecipe = null;
     }
     AppComponent.prototype.finishedEditing = function () {
         this.selectedRecipe = null;
