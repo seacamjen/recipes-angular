@@ -31,7 +31,7 @@ var AppComponent = (function () {
 AppComponent = __decorate([
     core_1.Component({
         selector: 'app-root',
-        template: "\n  <div class=\"container\">\n    <h1>Out of the Box Recipes</h1>\n    <recipe-list [childRecipeList] = \"masterRecipeList\" (clickSender)=\"editRecipe($event)\"></recipe-list>\n    <edit-recipe [childSelectedRecipe] =\"selectedRecipe\" (doneButtonClickedSender)=\"finishedEditing()\"></edit-recipe>\n    <new-recipe (newRecipeSender)=\"addRecipe($event)\"></new-recipe>\n  </div>\n  "
+        template: "\n  <div class=\"container-fluid jumbotron\">\n    <h1>Out of the Box Recipes</h1>\n    <br>\n    <new-recipe class=\"newRecipeDiv\" (newRecipeSender)=\"addRecipe($event)\"></new-recipe>\n  </div>\n  <div class=\"container\">\n    <recipe-list [childRecipeList] = \"masterRecipeList\" (clickSender)=\"editRecipe($event)\"></recipe-list>\n    <edit-recipe [childSelectedRecipe] =\"selectedRecipe\" (doneButtonClickedSender)=\"finishedEditing()\"></edit-recipe>\n\n  </div>\n  "
     })
 ], AppComponent);
 exports.AppComponent = AppComponent;

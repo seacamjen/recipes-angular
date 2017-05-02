@@ -4,11 +4,15 @@ import { Recipe } from './recipe.model';
 @Component({
   selector: 'app-root',
   template: `
-  <div class="container">
+  <div class="container-fluid jumbotron">
     <h1>Out of the Box Recipes</h1>
+    <br>
+    <new-recipe class="newRecipeDiv" (newRecipeSender)="addRecipe($event)"></new-recipe>
+  </div>
+  <div class="container">
     <recipe-list [childRecipeList] = "masterRecipeList" (clickSender)="editRecipe($event)"></recipe-list>
     <edit-recipe [childSelectedRecipe] ="selectedRecipe" (doneButtonClickedSender)="finishedEditing()"></edit-recipe>
-    <new-recipe (newRecipeSender)="addRecipe($event)"></new-recipe>
+
   </div>
   `
 })

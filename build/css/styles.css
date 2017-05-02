@@ -1,4 +1,21 @@
 .panel-body img {
-  height: 250px;
-  width: auto;
-}
+  width: 100%; }
+
+h1, h2, h3, h4 {
+  text-align: center; }
+
+form {
+  max-width: 900px;
+  display: block;
+  margin: auto; }
+
+.jumbotron {
+  color: white;
+  height: 100vh;
+  background-image: url("http://www.kingarthurflour.com/guides/pie-baking/images/pie-baking-hero.jpg");
+  background-size: cover; }
+
+.newRecipeDiv {
+  margin-top: 20%; }
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoic3R5bGVzLmNzcyIsInNvdXJjZXMiOlsic3R5bGVzLmNzcyJdLCJzb3VyY2VzQ29udGVudCI6WyIucGFuZWwtYm9keSBpbWcge1xuICB3aWR0aDogMTAwJTtcbn1cbmgxLCBoMiwgaDMsIGg0IHtcbiB0ZXh0LWFsaWduOiBjZW50ZXI7XG59XG5cbmZvcm0ge1xuICBtYXgtd2lkdGg6IDkwMHB4O1xuICBkaXNwbGF5OiBibG9jaztcbiAgbWFyZ2luOiBhdXRvO1xufVxuLmp1bWJvdHJvbntcbiAgY29sb3I6IHdoaXRlO1xuICBoZWlnaHQ6IDEwMHZoO1xuICBiYWNrZ3JvdW5kLWltYWdlOiB1cmwoXCJodHRwOi8vd3d3LmtpbmdhcnRodXJmbG91ci5jb20vZ3VpZGVzL3BpZS1iYWtpbmcvaW1hZ2VzL3BpZS1iYWtpbmctaGVyby5qcGdcIik7XG4gIGJhY2tncm91bmQtc2l6ZTogY292ZXI7XG59XG4ubmV3UmVjaXBlRGl2e1xuICBtYXJnaW4tdG9wOiAyMCU7XG59XG4iXSwibWFwcGluZ3MiOiJBQUFBLEFBQVksV0FBRCxDQUFDLEdBQUcsQ0FBQztFQUNkLEtBQUssRUFBRSxJQUFLLEdBQ2I7O0FBQ0QsQUFBQSxFQUFFLEVBQUUsQUFBQSxFQUFFLEVBQUUsQUFBQSxFQUFFLEVBQUUsQUFBQSxFQUFFLENBQUM7RUFDZCxVQUFVLEVBQUUsTUFBTyxHQUNuQjs7QUFFRCxBQUFBLElBQUksQ0FBQztFQUNILFNBQVMsRUFBRSxLQUFNO0VBQ2pCLE9BQU8sRUFBRSxLQUFNO0VBQ2YsTUFBTSxFQUFFLElBQUssR0FDZDs7QUFDRCxBQUFBLFVBQVUsQ0FBQTtFQUNSLEtBQUssRUFBRSxLQUFNO0VBQ2IsTUFBTSxFQUFFLEtBQU07RUFDZCxnQkFBZ0IsRUFBRSxrRkFBRztFQUNyQixlQUFlLEVBQUUsS0FBTSxHQUN4Qjs7QUFDRCxBQUFBLGFBQWEsQ0FBQTtFQUNYLFVBQVUsRUFBRSxHQUFJLEdBQ2pCIiwibmFtZXMiOltdLCJzb3VyY2VSb290IjoiL3NvdXJjZS8ifQ== */

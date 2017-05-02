@@ -28,7 +28,7 @@ __decorate([
 NewRecipeComponent = __decorate([
     core_1.Component({
         selector: 'new-recipe',
-        template: "\n  <div>\n    <h1>Add New Recipe</h1>\n    <input placeholder=\"Recipe Title\" class=\"form-control\" #newTitle>\n    <br>\n    <input placeholder=\"Ingredients\" class=\"form-control\" class=\"form-control\" #newIngredients>\n    <br>\n    <input placeholder=\"Source\" class=\"form-control\" #newSource>\n    <br>\n    <input placeholder=\"Image\" class=\"form-control\" #newImage>\n    <br>\n    <button (click)=\"submitForm(newTitle.value, newImage.value, newIngredients.value, newSource.value); newTitle.value='';\">Add</button>\n  </div>\n  "
+        template: "\n  <div>\n    <h2 class=\"newRecipeDiv\">Add New Recipe</h2>\n    <form>\n    <input placeholder=\"Recipe Title\" class=\"form-control\" #newTitle>\n    <br>\n    <input placeholder=\"Ingredients\" class=\"form-control\" class=\"form-control\" #newIngredients>\n    <br>\n    <input placeholder=\"Source\" class=\"form-control\" #newSource>\n    <br>\n    <input placeholder=\"Image\" class=\"form-control\" #newImage>\n    <br>\n    <button class=\"btn btn-default\" (click)=\"submitForm(newTitle.value, newImage.value, newIngredients.value, newSource.value); newTitle.value=''; newImage.value=''; newIngredients.value=''; newSource.value='';\">Add</button>\n    </form>\n  </div>\n  "
     })
 ], NewRecipeComponent);
 exports.NewRecipeComponent = NewRecipeComponent;

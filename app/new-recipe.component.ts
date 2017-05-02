@@ -4,7 +4,8 @@ import {Recipe} from './recipe.model';
   selector: 'new-recipe',
   template:`
   <div>
-    <h1>Add New Recipe</h1>
+    <h2 class="newRecipeDiv">Add New Recipe</h2>
+    <form>
     <input placeholder="Recipe Title" class="form-control" #newTitle>
     <br>
     <input placeholder="Ingredients" class="form-control" class="form-control" #newIngredients>
@@ -13,7 +14,8 @@ import {Recipe} from './recipe.model';
     <br>
     <input placeholder="Image" class="form-control" #newImage>
     <br>
-    <button (click)="submitForm(newTitle.value, newImage.value, newIngredients.value, newSource.value); newTitle.value='';">Add</button>
+    <button class="btn btn-default" (click)="submitForm(newTitle.value, newImage.value, newIngredients.value, newSource.value); newTitle.value=''; newImage.value=''; newIngredients.value=''; newSource.value='';">Add</button>
+    </form>
   </div>
   `
 })

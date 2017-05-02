@@ -1,0 +1,21 @@
+.panel-body img {
+  width: 100%;
+}
+h1, h2, h3, h4 {
+ text-align: center;
+}
+
+form {
+  max-width: 900px;
+  display: block;
+  margin: auto;
+}
+.jumbotron{
+  color: white;
+  height: 100vh;
+  background-image: url("http://www.kingarthurflour.com/guides/pie-baking/images/pie-baking-hero.jpg");
+  background-size: cover;
+}
+.newRecipeDiv{
+  margin-top: 20%;
+}
